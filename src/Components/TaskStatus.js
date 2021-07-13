@@ -1,10 +1,18 @@
 import TaskCard from "./TaskCard";
 
 export default function TaskStatus(props) {
+  const classVar = props.status.toLowerCase();
   return (
-    <div className="taskStatus">
+    <div className={`${classVar} taskStatus`}>
       <div className="taskStatusTitle fullWidth">{props.status}</div>
-      <TaskCard taskTitle="Task A" taskPriority="High" />
+      {props.tasks?.map((element, iteration) => {
+        return (
+          <TaskCard
+            taskTitle={element.taskTitle}
+            taskPriority={element.taskPriority}
+          />
+        );
+      })}
     </div>
   );
 }
