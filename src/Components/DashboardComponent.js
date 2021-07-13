@@ -3,7 +3,7 @@ import config from "./Dashboard.config";
 
 export default function DashboardComponent() {
   return (
-    <div className="dashboard">
+    <div className="dashboard halfWidth">
       <div className="fullWidth">
         <div className="dashboardTitle">Task Status Dashboard</div>
       </div>

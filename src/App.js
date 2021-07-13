@@ -1,9 +1,9 @@
 import "./styles.css";
-import DashboardComponent from "./Components/DashboardComponent";
+import MainComponent from "./Components/MainComponent";
 export default function App() {
   return (
     <div className="App">
-      <DashboardComponent />
+      <MainComponent />
     </div>
   );
 }

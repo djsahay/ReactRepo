@@ -10,18 +10,24 @@ body {
   font-family: sans-serif;
 }
 .dashboard {
-  width: 50%;
   height: 100%;
   float: left;
   border: 2px #000 solid;
   background-color: #e6e6e6;
+  border-radius: 10px;
+}
+.taskEditor {
+  margin-left: 5px;
+  border: 2px solid;
+  text-align: center;
+  border-radius: 10px;
 }
 .fullWidth {
   width: 100%;
-  float: left;
 }
 .halfWidth {
-  width: 45%;
+  width: 49%;
+  float: left;
 }
 .dashboardTitle {
   width: 100%;
@@ -33,13 +39,14 @@ body {
   border-bottom: 2px solid black;
   text-align: center;
   background: #fff;
+  border-radius: 10px 10px 0 0;
 }
 .taskStatus {
   width: 96%;
   float: left;
   margin: 1.5%;
   border: 2px solid;
-
+  border-radius: 10px;
   background: #fff url("./images/Tony_Stark.png") no-repeat right bottom;
 }
 .taskStatusTitle {
@@ -51,7 +58,7 @@ body {
 }
 .taskCard {
   margin: 5%;
-  width: 75%;
+  width: 25%;
   border: 2px solid black;
   border-radius: 10px;
   float: left;
