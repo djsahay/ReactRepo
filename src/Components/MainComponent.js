@@ -1,36 +1,11 @@
 import { useEffect, useState } from "react";
 import DashboardComponent from "./DashboardComponent";
 import TaskEditorComponent from "./TaskEditorComponent";
+import tasks from "../Data/TaskData";
 
 export default function MainComponent() {
-  /*const tasks = {
-    Drafted: [
-      {
-        taskTitle: "Task A",
-        taskPriority: "Medium"
-      }
-    ],
-    ToDo: [
-      {
-        taskTitle: "Task B",
-        taskPriority: "Minor"
-      }
-    ],
-    Done: [
-      {
-        taskTitle: "Task C",
-        taskPriority: "Critical"
-      }
-    ],
-    InProgress: [
-      {
-        taskTitle: "Task D",
-        taskPriority: "High"
-      }
-    ]
-  }; */
   const getData = () => {
-    fetch("./TaskData.json", {
+    fetch("../TaskData.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json"
@@ -46,7 +21,8 @@ export default function MainComponent() {
       });
   };
   useEffect(() => {
-    getData();
+    // getData(); //TODO
+    setTasks(tasks);
   }, []);
 
   const [taskList, setTasks] = useState({});
