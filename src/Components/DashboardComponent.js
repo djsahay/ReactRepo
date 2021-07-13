@@ -1,4 +1,5 @@
 import TaskStatus from "./TaskStatus";
+import config from "./Dashboard.config";
 
 export default function DashboardComponent() {
   return (
@@ -7,9 +8,9 @@ export default function DashboardComponent() {
         <div className="dashboardTitle">Task Status Dashboard</div>
       </div>
       <div className="fullWidth">
-        <TaskStatus status="ToDo" />
-        <TaskStatus status="InProgress" />
-        <TaskStatus status="Done" />
+        {config.taskStatus.map((statusValue, i) => {
+          return <TaskStatus status={statusValue} />;
+        })}
       </div>
     </div>
   );

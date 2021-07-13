@@ -1,8 +1,16 @@
+body {
+  width: 99%;
+  float: left;
+  background-image: url("./images/Tony_Stark.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100px;
+}
 .App {
   font-family: sans-serif;
 }
 .dashboard {
-  width: 100%;
+  width: 50%;
   height: 100%;
   float: left;
   border: 2px #000 solid;
@@ -12,27 +20,31 @@
   width: 100%;
   float: left;
 }
+.halfWidth {
+  width: 45%;
+}
 .dashboardTitle {
-  width: 98%;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(207, 24, 24);
   font-weight: bold;
-  padding: 5px;
+  padding: 1% 0;
   float: left;
   border-bottom: 2px solid black;
+  text-align: center;
+  background: #fff;
 }
 .taskStatus {
-  width: 32%;
-  padding: 2px;
+  width: 96%;
   float: left;
-  border-right: 2px solid;
-}
-.taskStatus:last-child {
-  border: 0px;
+  margin: 1.5%;
+  border: 2px solid;
+
+  background: #fff url("./images/Tony_Stark.png") no-repeat right bottom;
 }
 .taskStatusTitle {
   border-bottom: 2px solid black;
-  padding: 2%;
+  padding: 2% 0;
   font-weight: bold;
   text-align: center;
   color: rgba(255, 0, 106, 0.849);
