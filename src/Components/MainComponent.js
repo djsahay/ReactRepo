@@ -20,6 +20,11 @@ export default function MainComponent() {
         setTasks(tasksData);
       });
   };
+  const updateTasks = ({ status, task }) => {
+    let tasks = { ...taskList };
+    tasks[status].push(task);
+    setTasks(tasks);
+  };
   useEffect(() => {
     // getData(); //TODO
     setTasks(tasks);
@@ -29,7 +34,7 @@ export default function MainComponent() {
   return (
     <div className="fullWidth">
       <DashboardComponent {...taskList} />
-      <TaskEditorComponent />
+      <TaskEditorComponent addTask={updateTasks} />
     </div>
   );
 }

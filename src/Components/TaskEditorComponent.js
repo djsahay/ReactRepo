@@ -1,7 +1,9 @@
-export default function TaskEditorComponent() {
+import TaskFormComponent from "./TaskFormComponent";
+
+export default function TaskEditorComponent(props) {
   return (
     <div className="taskEditor halfWidth">
-      <h2> TaskEditorComponent Goes here </h2>
+      <TaskFormComponent addTask={props.addTask} />
     </div>
   );
 }
