@@ -103,6 +103,9 @@ body {
   font-weight: bold;
   margin-right: 2%;
 }
+.taskEditor select option {
+  font-style: oblique;
+}
 .taskEditor select,
 .taskEditor input {
   border: 2px solid green;
