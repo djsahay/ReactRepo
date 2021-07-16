@@ -93,3 +93,32 @@ body {
 .high {
   color: #ff00d4;
 }
+.taskEditor form {
+  margin: 2%;
+  font-size: 20px;
+  color: green;
+}
+.taskEditor label {
+  font-style: oblique;
+  font-weight: bold;
+  margin-right: 2%;
+}
+.taskEditor select,
+.taskEditor input {
+  border: 2px solid green;
+  font-size: 20px;
+  color: green;
+  border-radius: 8px;
+  padding: 8px 30px 8px 10px;
+}
+.taskEditor input[type="submit"] {
+  background-color: #fff;
+  color: chocolate;
+  padding: 10px 50px;
+  background: #f3f3f3;
+}
+.taskEditor input[type="submit"]:hover {
+  background: #ccc;
+  cursor: pointer;
+  color: #fff;
+}
